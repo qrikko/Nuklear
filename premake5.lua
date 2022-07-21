@@ -9,8 +9,8 @@ project "nuklear"
 
 	files {
 		"nuklear.h",
-		"src/*.h",
-		"src/*.c",
+		"src/**.h",
+		"src/**.c",
 	}
 
 	filter "configurations:Debug"
