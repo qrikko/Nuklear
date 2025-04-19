@@ -88,6 +88,7 @@ NK_API void nk_d3d12_shutdown(void);
 #define COBJMACROS
 #include <d3d12.h>
 
+#include <stdlib.h>
 #include <stddef.h>
 #include <string.h>
 #include <float.h>
@@ -363,6 +364,7 @@ nk_d3d12_handle_event(HWND wnd, UINT msg, WPARAM wparam, LPARAM lparam)
             return 1;
 
         case VK_RETURN:
+        case VK_SEPARATOR:
             nk_input_key(&d3d12.ctx, NK_KEY_ENTER, down);
             return 1;
 
